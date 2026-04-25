@@ -6,6 +6,16 @@ This project analyzes multi-year sales data to uncover critical issues in revenu
 
 Instead of just visualizing data, this dashboard highlights hidden business risks and performance bottlenecks that directly impact profitability.
 
+📁 Project Structure
+├── data/
+│   ├── raw_dataset.xlsx        # Original dataset (unaltered)
+│   ├── cleaned_dataset.xlsx    # Processed/cleaned data (if applicable)
+│
+├── dashboard/
+│   ├── sales_dashboard.xlsx    # Final interactive dashboard
+│
+├── README.md
+
 📁 Dataset
 
 The dataset includes transaction-level sales data with:
