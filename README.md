@@ -1,55 +1,88 @@
-📊 Sales Performance & Operational Analytics Dashboard
+📊 Sales & Operational Performance Dashboard
 
-🚀 Project Overview
+🚀 Overview
 
-This project delivers an end-to-end data analytics solution designed to evaluate sales performance, operational efficiency, and business trends using a structured dataset and an interactive dashboard.
+This project analyzes multi-year sales data to uncover critical issues in revenue generation, payment behavior, and operational efficiency. 
 
-The goal is simple: turn raw sales data into actionable insights that can support decision-making across revenue growth, customer behavior, and operational performance.
+Instead of just visualizing data, this dashboard highlights hidden business risks and performance bottlenecks that directly impact profitability.
 
-🎯 Objectives
+📁 Dataset
 
-1. Analyze overall sales performance and trends over time
-2. Identify top-performing products and regions
-3. Evaluate operational metrics like delivery status and order efficiency
-4. Provide a clear, interactive dashboard for business insights
+The dataset includes transaction-level sales data with:
 
-📁 Project Structure
-├── data/
-│   ├── raw_dataset.xlsx        # Original dataset (unaltered)
-│   ├── cleaned_dataset.xlsx    # Processed/cleaned data (if applicable)
-│
-├── dashboard/
-│   ├── sales_dashboard.xlsx    # Final interactive dashboard
-│
-├── README.md
+1. Order details (ID, date, product)
+2. Revenue (₹ value)
+3. Payment status (Paid, Pending, Failed)
+4. Delivery status (Delivered, Cancelled, In Transit)
+5. Customer location (city-level)
 
-🛠️ Tools & Technologies
+
+🛠️ Tools Used
 
 1. Microsoft Excel
 2. Pivot Tables
-3. Data Cleaning & Transformation
-4. Data Visualization
+3. Slicers & Interactive Dashboarding
+4. Data Cleaning & Structuring
 
-📊 Key Dashboard Features
+📊 Dashboard Features
 
-1. 📈 Sales Trends Analysis – Track revenue over time
-2. 🛍️ Product Performance – Identify best and worst-performing products
-3. 🌍 Regional Insights – Compare performance across locations
-4. 🚚 Operational Metrics – Delivery status and efficiency tracking
-5. 📌 KPI Indicators – Quick snapshot of business performance
-6. 🔍 Key Insights (Example – Customize This)
+1. KPI panel (Revenue, Orders, AOV, Payment & Delivery Success)
+2. Time-series trends (Revenue & Orders)
+3. Payment & Delivery distribution analysis
+4. Product-level performance breakdown
+5. City-level performance insights
+6. Interactive slicers (Year-wise filtering)
 
-a. Sales show consistent patterns with no major volatility
-b. Certain products contribute disproportionately to revenue
-c. Delivery performance impacts customer satisfaction trends
-d. Opportunities exist for optimizing operational efficiency
+🔍 Key Insights (Actual Business Findings)
 
-(⚠️ Don’t leave this generic — replace with real insights from your dashboard or it looks lazy.)
+1. Payment System is the Biggest Risk
+Only 41% payment success rate
+Majority of transactions are either pending or failing
+Revenue leakage is not due to sales — it’s due to collection failure
 
+👉 This is not a sales problem. It’s a payment infrastructure problem.
 
+2. “Pending” Payments Are Misleading
+59% of transactions are marked as pending
+This inflates perceived performance
+Realistically, a large portion of these may convert into failures
+
+👉 Revenue numbers are overstated.
+
+3. Delivery Performance is Declining
+Delivery success (~43%) is low and trending downward
+Increasing cancellations and in-transit delays
+
+👉 Operational inefficiency is getting worse over time, not improving.
+
+4. AOV is Flat → No Growth Strategy
+Average Order Value shows no meaningful increase
+Indicates lack of:
+Upselling
+Pricing strategy
+Product bundling
+
+👉 Business is running, not scaling.
+
+5. Revenue is Concentrated
+Smartwatches are the top-performing product
+Bangalore is the strongest city
+
+👉 Growth depends heavily on a few segments, which is risky.
+
+⚠️ Core Problem Summary
+
+This business is not failing because of low demand.
+
+It is failing because of:
+
+1. Poor payment conversion
+2. Weak operational execution
+3. Lack of revenue optimization strategy
 
 💡 Future Improvements
-Automate data refresh using Power BI / Python
-Add predictive analytics (forecasting sales trends)
-Improve UI/UX of the dashboard
-Integrate SQL-based data pipeline
+
+1. Add SQL-based data pipeline
+2. Build Power BI version for scalability
+3. Implement forecasting (sales & failure prediction)
+4. Deep-dive into payment failure causes
